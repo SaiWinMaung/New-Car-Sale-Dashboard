@@ -5,11 +5,13 @@ import plotly.express as px
 import chartpage
 import table
 
-page = st.sidebar.selectbox('Select Page Option', ['Chart Page', 'Table Page'])
+st.set_page_config(layout="wide", page_icon=":car:", page_title="Car Sale Dashboard")
+
+page = st.sidebar.selectbox("Select Page Option", ["Chart Page", "Table Page"])
 
 
-if page == 'Chart Page':
+if page == "Chart Page":
     chartpage.show_page()
 
-else :
+else:
     table.show_page()

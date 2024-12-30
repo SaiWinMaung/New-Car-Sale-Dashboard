@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
-st.set_page_config(layout="wide", page_icon=":car:", page_title="Car Sale Dashboard")
 
 def show_page():
     df = pd.read_csv("cars.csv", index_col=0)
